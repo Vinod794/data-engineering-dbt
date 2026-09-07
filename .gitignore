@@ -1,0 +1,15 @@
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Environment / secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
