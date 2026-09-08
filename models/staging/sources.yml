@@ -6,13 +6,21 @@ sources:
 
     tables:
       - name: airflow_demo
+        description: "Source table containing Airflow demo user data."
 
         columns:
           - name: id
+            description: "Unique user identifier."
             data_tests:
               - not_null
               - unique
 
           - name: name
+            description: "User name."
+            data_tests:
+              - not_null
+
+          - name: updated_at
+            description: "Timestamp indicating when the source record was last updated."
             data_tests:
               - not_null

@@ -34,6 +34,6 @@ from source_data s
 {% if is_incremental() %}
 
 cross join latest_target t
-where s.updated_at > t.max_updated_at
+where s.updated_at >= t.max_updated_at - interval '1 hour'
 
 {% endif %}

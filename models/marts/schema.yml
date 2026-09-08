@@ -15,3 +15,8 @@ models:
         description: "User name."
         data_tests:
           - not_null
+
+      - name: updated_at
+        description: "Latest source update timestamp used for incremental processing."
+        data_tests:
+          - not_null
