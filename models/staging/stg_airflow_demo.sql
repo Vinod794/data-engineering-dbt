@@ -2,5 +2,6 @@
 
 select
     id,
-    trim(name) as name
+    trim(name) as name,
+    updated_at
 from {{ source('airflow', 'airflow_demo') }}
