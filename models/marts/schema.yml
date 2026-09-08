@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Dimension table containing users."
+
+    columns:
+      - name: user_id
+        description: "Unique user identifier."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: user_name
+        description: "User name."
+        data_tests:
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_airflow_demo
+    description: "Staging model for Airflow demo data."
+
+    columns:
+      - name: id
+        description: "Unique identifier."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: name
+        description: "User name."
+        data_tests:
+          - not_null
