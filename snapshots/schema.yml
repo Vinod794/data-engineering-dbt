@@ -1,0 +1,21 @@
+version: 2
+
+snapshots:
+  - name: airflow_demo_snapshot
+    description: "Historical snapshot of Airflow demo user records."
+
+    columns:
+      - name: id
+        description: "Unique user identifier."
+
+      - name: name
+        description: "User name."
+
+      - name: updated_at
+        description: "Source record update timestamp."
+
+      - name: dbt_valid_from
+        description: "Timestamp when this version became active."
+
+      - name: dbt_valid_to
+        description: "Timestamp when this version stopped being active."
