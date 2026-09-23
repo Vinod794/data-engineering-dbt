@@ -1,0 +1,4 @@
+status_code,status_name
+A,ACTIVE
+I,INACTIVE
+P,PENDING

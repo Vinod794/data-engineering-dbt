@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: status_mapping
+    description: "Reference mapping of status codes to status names."
+
+    columns:
+      - name: status_code
+        description: "Short code representing the status."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: status_name
+        description: "Human-readable status name."
+        data_tests:
+          - not_null
