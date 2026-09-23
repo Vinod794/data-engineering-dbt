@@ -20,3 +20,18 @@ models:
         description: "Latest source update timestamp used for incremental processing."
         data_tests:
           - not_null
+
+  - name: dim_status
+    description: "Dimension table containing status codes and their descriptions."
+
+    columns:
+      - name: status_code
+        description: "Unique status code."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: status_name
+        description: "Human-readable status name."
+        data_tests:
+          - not_null
